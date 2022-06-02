@@ -200,6 +200,88 @@ namespace calculadora
             }
         }
 
+        private void numpad1(object sender, KeyEventArgs e)
+        {
+            textresult.Text += "1";
+        }
+
+        private void Calculadora_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1)
+            {
+                button14.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad2)
+            {
+                button19.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad3)
+            {
+                button8.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad4)
+            {
+                button13.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad5)
+            {
+                button18.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad6)
+            {
+                button7.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad7)
+            {
+                button12.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad8)
+            {
+                button17.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad9)
+            {
+                button6.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad0)
+            {
+                button9.PerformClick();
+            }
+            if(e.KeyCode == Keys.Subtract)
+            {
+                button22.PerformClick();
+            }
+            if (e.KeyCode == Keys.Separator)
+            {
+                button16.PerformClick();
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                button24.PerformClick();
+            }
+            if (e.KeyCode == Keys.Divide)
+            {
+                button20.PerformClick();
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                button4.PerformClick();
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                button2.PerformClick();
+            }
+            if (e.KeyCode == Keys.Add)
+            {
+                button23.PerformClick();
+            }
+            if (e.KeyCode == Keys.Multiply)
+            {
+                button21.PerformClick();
+            }
+
+        }
+
         private void button16_Click(object sender, EventArgs e)
         {
             textresult.Text += ".";

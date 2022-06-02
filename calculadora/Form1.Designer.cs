@@ -60,6 +60,7 @@
             this.textresult.ForeColor = System.Drawing.Color.White;
             this.textresult.Location = new System.Drawing.Point(20, 54);
             this.textresult.Name = "textresult";
+            this.textresult.ReadOnly = true;
             this.textresult.Size = new System.Drawing.Size(298, 44);
             this.textresult.TabIndex = 0;
             this.textresult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -204,6 +205,7 @@
             this.button14.Text = "1";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button14.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numpad1);
             // 
             // button16
             // 
@@ -343,9 +345,11 @@
             this.Controls.Add(this.labeloperacao);
             this.Controls.Add(this.textresult);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Calculadora";
             this.Text = "Calculadora C#";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculadora_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
